@@ -54,7 +54,7 @@ spec:
 
     # ArgoCD finds kustomization.yaml here and renders with Kustomize
     # automatically — no plugin configuration required.
-    path: 04-Kubernetes/manifests
+    path: aegiscloud-local/k8s
 
   # ----------------------------------------------------------------------------
   # Destination
