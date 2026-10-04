@@ -1,0 +1,31 @@
+# AegisCloud — overlay local (k3s). Ne modifie aucun fichier de l'auteur.
+# Remplace uniquement : (1) le stockage EBS par local-path, (2) les images ECR par les images locales.
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - ../../04-Kubernetes/manifests
+
+images:
+  - name: 991216470475.dkr.ecr.us-east-1.amazonaws.com/ivolve-auth-service
+    newName: ivolve-auth-service
+    newTag: local
+  - name: 991216470475.dkr.ecr.us-east-1.amazonaws.com/ivolve-frontend
+    newName: ivolve-frontend
+    newTag: local
+  - name: 991216470475.dkr.ecr.us-east-1.amazonaws.com/ivolve-roadmap-service
+    newName: ivolve-roadmap-service
+    newTag: local
+
+patches:
+  - target:
+      kind: StorageClass
+      name: ivolve-storage
+    patch: |-
+      - op: replace
+        path: /provisioner
+        value: rancher.io/local-path
+      - op: remove
+        path: /parameters
+      - op: remove
+        path: /metadata/annotations/storageclass.kubernetes.io~1is-default-class
