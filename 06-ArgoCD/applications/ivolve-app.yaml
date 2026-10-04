@@ -44,7 +44,7 @@ spec:
   # Source — where the desired state lives
   # ----------------------------------------------------------------------------
   source:
-    repoURL: https://github.com/WaleedDarwesh/CloudDevOpsProject.git
+    repoURL: https://github.com/penelopeeckhar/AegisCloud.git
 
     # HEAD tracks the default branch. Alternatives:
     #   'main'        equivalent, and more explicit
