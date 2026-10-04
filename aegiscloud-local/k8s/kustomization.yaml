@@ -29,3 +29,4 @@ patches:
         path: /parameters
       - op: remove
         path: /metadata/annotations/storageclass.kubernetes.io~1is-default-class
+  - path: test-gitops.yaml
