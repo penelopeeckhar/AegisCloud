@@ -168,7 +168,7 @@ k8s-delete: ## Delete all application resources
 # ==============================================================================
 argo-install: ## Install ArgoCD into the cluster
 	kubectl create namespace argocd --dry-run=client -o yaml | kubectl apply -f -
-	kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+	kubectl apply -k $(ARGO_DIR)/local --server-side --force-conflicts
 	kubectl wait --for=condition=available --timeout=600s \
 	  deployment/argocd-server -n argocd
 
