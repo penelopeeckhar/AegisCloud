@@ -36,7 +36,7 @@ spec:
   # Application in this project can make ArgoCD pull manifests from a repository
   # they control and apply them to your cluster.
   sourceRepos:
-    - https://github.com/penelopeeckhar/AegisCloud.git
+    - git@github.com:penelopeeckhar/AegisCloud.git
 
   # ----------------------------------------------------------------------------
   # Permitted destinations
