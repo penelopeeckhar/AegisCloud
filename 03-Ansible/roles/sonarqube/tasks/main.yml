@@ -50,8 +50,8 @@
   ansible.builtin.file:
     path: "{{ sonarqube_data_dir }}/postgresql"
     state: directory
-    owner: "999"    # the `postgres` user inside the postgres image
-    group: "999"
+    owner: "70"     # the `postgres` user inside postgres:15-alpine (999 on Debian images)
+    group: "70"
     mode: "0700"    # PostgreSQL refuses to start if its data dir is group-readable
 
 - name: Render the SonarQube Compose file
