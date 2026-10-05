@@ -7,3 +7,15 @@ images:
   - name: public.ecr.aws/docker/library/redis
     newName: docker.io/library/redis
     newTag: 8.2.3
+patches:
+  - patch: |-
+      apiVersion: v1
+      kind: ConfigMap
+      metadata:
+        name: argocd-cm
+      data:
+        resource.customizations.health.networking.k8s.io_Ingress: |
+          hs = {}
+          hs.status = "Healthy"
+          hs.message = "Ingress ALB inactif en local (aucun controleur)"
+          return hs
