@@ -56,8 +56,7 @@
       # a confusing error; failing here states the reason plainly.
       ansible.builtin.assert:
         that:
-          - ansible_facts['distribution'] == 'Ubuntu'
-          - ansible_facts['distribution_major_version'] is version('22', '>=')
+          - ansible_facts['os_family'] == 'Debian'
         fail_msg: >-
           This playbook targets Ubuntu 22.04+, but found
           {{ ansible_facts['distribution'] }} {{ ansible_facts['distribution_version'] }}.
