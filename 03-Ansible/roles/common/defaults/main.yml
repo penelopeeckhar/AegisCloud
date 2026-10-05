@@ -12,7 +12,6 @@ common_packages:
   - apt-transport-https      # required before any https:// APT source is added
   - ca-certificates          # root CA bundle for TLS verification
   - gnupg                    # verifies repository signing keys
-  - software-properties-common
 
   # --- Networking and downloads ---
   - curl
