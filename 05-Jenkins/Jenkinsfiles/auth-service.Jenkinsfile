@@ -18,10 +18,10 @@ microservicePipeline(
     sourceDir: 'src/auth-service',
     language: 'python',
 
-    ecrRegistry: '991216470475.dkr.ecr.us-east-1.amazonaws.com',
+    ecrRegistry: 'localhost:5001',
     awsRegion: 'us-east-1',
 
-    gitRepo: 'github.com/WaleedDarwesh/CloudDevOpsProject.git',
+    gitRepo: 'github.com/penelopeeckhar/AegisCloud.git',
     gitBranch: 'main',
     manifestDir: '04-Kubernetes/manifests',
 

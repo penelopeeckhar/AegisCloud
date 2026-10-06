@@ -30,12 +30,12 @@ microservicePipeline(
 
     // Replace 991216470475 with your own account, or read it from:
     //   terraform -chdir=02-Terraform output -raw ecr_registry
-    ecrRegistry: '991216470475.dkr.ecr.us-east-1.amazonaws.com',
+    ecrRegistry: 'localhost:5001',
     awsRegion: 'us-east-1',
 
     // Where the updated manifest commit is pushed. No scheme — the credential
     // is injected in front of it by updateManifests.groovy.
-    gitRepo: 'github.com/WaleedDarwesh/CloudDevOpsProject.git',
+    gitRepo: 'github.com/penelopeeckhar/AegisCloud.git',
     gitBranch: 'main',
     manifestDir: '04-Kubernetes/manifests',
 
