@@ -30,3 +30,4 @@ patches:
       - op: remove
         path: /metadata/annotations/storageclass.kubernetes.io~1is-default-class
   - path: test-gitops.yaml
+  - path: jenkins-proxy-local.yaml
