@@ -80,8 +80,8 @@ images:
   newName: localhost:5001/ivolve-frontend
   newTag: 2-71a31ec
 - name: ivolve-roadmap-service
-  newName: 991216470475.dkr.ecr.us-east-1.amazonaws.com/ivolve-roadmap-service
-  newTag: 9-1f04597
+  newName: localhost:5001/ivolve-roadmap-service
+  newTag: 3-a270010
 
 # ------------------------------------------------------------------------------
 # Common labels
