@@ -1,0 +1,7 @@
+# Exception de risque acceptée — roadmap-service
+# CVE-2026-47884 : spring-webmvc, exécution de code via XsltView.
+# Justification : le correctif n'existe que dans Spring Framework 7 (Spring Boot 4),
+# non disponible sur Spring Boot 3.5.x (6.2.19 installé). Le code de roadmap-service
+# n'utilise ni XsltView ni aucune API XSLT (vérifié le 2026-10-06).
+# À réévaluer : migrer vers Spring Boot 4, puis supprimer cette ligne.
+CVE-2026-47884 exp:2027-01-31
