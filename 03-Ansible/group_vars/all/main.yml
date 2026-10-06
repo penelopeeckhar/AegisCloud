@@ -119,5 +119,5 @@ docker_users:
 # they are loaded from. This project's copy lives at 05-Jenkins/vars/, which
 # Jenkins cannot consume directly, so it is mirrored to a dedicated repository.
 # See 05-Jenkins/README.md for the sync script.
-shared_library_repo: "https://github.com/Waleeddarwesh/jenkins-shared-library.git"
+shared_library_repo: "https://github.com/penelopeeckhar/jenkins-shared-library.git"
 shared_library_name: "shared-library"
