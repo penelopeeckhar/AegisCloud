@@ -150,6 +150,15 @@ spec:
       managedFieldsManagers:
         - kube-controller-manager
 
+    # StatefulSet mysql : le cluster complète apiVersion/kind dans volumeClaimTemplates,
+    # ce qui laissait l'application en OutOfSync alors que mysql est sain.
+    - group: apps
+      kind: StatefulSet
+      name: mysql
+      jqPathExpressions:
+        - .spec.volumeClaimTemplates[]?.apiVersion
+        - .spec.volumeClaimTemplates[]?.kind
+
   # ----------------------------------------------------------------------------
   # Revision history
   # ----------------------------------------------------------------------------
