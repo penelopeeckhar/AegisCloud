@@ -124,7 +124,7 @@ metadata:
 spec:
   ingressClassName: alb
   rules:
-    - host: sonarqube.craft-egy.com
+    - host: sonarqube.example.com
       http:
         paths:
           - path: /

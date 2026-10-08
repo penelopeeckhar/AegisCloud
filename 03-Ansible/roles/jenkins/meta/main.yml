@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   role_name: jenkins
-  author: Waleed Darwesh
+  author: CloudDevOpsProject (MIT)
   description: Installs the Jenkins LTS controller with declarative plugin provisioning, JVM tuning and a systemd drop-in override.
   license: MIT
   min_ansible_version: "2.15"

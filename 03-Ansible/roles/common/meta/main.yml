@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   role_name: common
-  author: Waleed Darwesh
+  author: CloudDevOpsProject (MIT)
   description: Baseline OS configuration — packages, timezone, sysctl, log retention, unattended security upgrades.
   license: MIT
   min_ansible_version: "2.15"

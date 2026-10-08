@@ -71,5 +71,5 @@ vault_jenkins_admin_password: "CHANGE_ME_strong_jenkins_password"
 # Required scope: Contents → Read and write, on the CloudDevOpsProject
 # repository ONLY. A classic token with full `repo` scope grants access to every
 # repository you own — never use one here.
-vault_github_username: "WaleedDarwesh"
+vault_github_username: "your-github-username"
 vault_github_token: "CHANGE_ME_github_personal_access_token"

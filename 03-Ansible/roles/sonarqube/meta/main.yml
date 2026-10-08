@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   role_name: sonarqube
-  author: Waleed Darwesh
+  author: CloudDevOpsProject (MIT)
   description: Deploys SonarQube Community LTS with a PostgreSQL backend via Docker Compose, and rotates the default admin password.
   license: MIT
   min_ansible_version: "2.15"

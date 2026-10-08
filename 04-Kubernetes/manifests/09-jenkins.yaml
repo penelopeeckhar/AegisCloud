@@ -126,7 +126,7 @@ metadata:
 spec:
   ingressClassName: alb
   rules:
-    - host: jenkins.craft-egy.com
+    - host: jenkins.example.com
       http:
         paths:
           - path: /

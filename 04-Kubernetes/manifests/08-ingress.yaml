@@ -138,7 +138,7 @@ spec:
     # Once a real domain exists, add:
     #   - host: ivolve.example.com
     # and point a Route 53 alias record at the ALB.
-    - host: app.craft-egy.com
+    - host: app.example.com
       http:
         paths:
           - path: /

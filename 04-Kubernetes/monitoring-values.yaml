@@ -11,7 +11,7 @@ grafana:
       alb.ingress.kubernetes.io/ssl-redirect: "443"
       alb.ingress.kubernetes.io/group.name: ivolve-dev-alb
     hosts:
-      - grafana.craft-egy.com
+      - grafana.example.com
     path: /
 prometheus:
   ingress:

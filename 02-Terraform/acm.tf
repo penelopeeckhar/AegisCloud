@@ -3,10 +3,10 @@
 # ==============================================================================
 
 resource "aws_acm_certificate" "alb_cert" {
-  domain_name       = "*.craft-egy.com"
+  domain_name       = "*.example.com"
   validation_method = "DNS"
 
-  subject_alternative_names = ["craft-egy.com"]
+  subject_alternative_names = ["example.com"]
 
   tags = merge(local.common_tags, {
     Name = "${local.name_prefix}-alb-cert"

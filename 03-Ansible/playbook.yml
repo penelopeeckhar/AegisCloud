@@ -187,7 +187,7 @@
                 Name           : shared-library
                 Default version: main
                 Retrieval      : Modern SCM → Git
-                Repository     : {{ shared_library_repo | default('https://github.com/Waleeddarwesh/jenkins-shared-library.git') }}
+                Repository     : {{ shared_library_repo | default('https://github.com/penelopeeckhar/jenkins-shared-library.git') }}
            4. Manage Jenkins → Credentials, add:
                 github-token    (Username with password — a GitHub PAT)
                 sonar-token     (Secret text — generated in the SonarQube UI)

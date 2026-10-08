@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   role_name: java
-  author: Waleed Darwesh
+  author: CloudDevOpsProject (MIT)
   description: Installs OpenJDK and configures JAVA_HOME. Required by Jenkins and by the SonarQube scanner.
   license: MIT
   min_ansible_version: "2.15"

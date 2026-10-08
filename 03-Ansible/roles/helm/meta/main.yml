@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   role_name: helm
-  author: Waleed Darwesh
+  author: CloudDevOpsProject (MIT)
   description: Installs Helm 3 and pre-registers the chart repositories used by this project.
   license: MIT
   min_ansible_version: "2.15"
