@@ -78,7 +78,7 @@ images:
   newTag: 6-32b99aa
 - name: ivolve-frontend
   newName: localhost:5001/ivolve-frontend
-  newTag: 2-71a31ec
+  newTag: 4-6af23f4
 - name: ivolve-roadmap-service
   newName: localhost:5001/ivolve-roadmap-service
   newTag: 3-a270010
